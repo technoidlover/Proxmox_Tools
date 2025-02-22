@@ -1,6 +1,7 @@
-# Script Manager
+# PRM_Toolts
 
-Script Manager is a simple tool that helps you manage and execute `.sh` scripts in the current directory. With a user-friendly interface and centered display, you can easily select and run scripts quickly.
+PRM Toolts is a simple tool that helps you manage and execute `.sh` scripts in the current directory. With a user-friendly interface and centered display, you can easily select and run scripts quickly. Every script in this tool for proxmox 7 and 8 
+
 ![ScreenShot](ScreenShot.png "Title")
 
 ## Features
