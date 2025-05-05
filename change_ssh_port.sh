@@ -1,7 +1,13 @@
 #!/bin/bash
 
-# Set the new SSH port (replace 2222 with the desired port)
-NEW_SSH_PORT=2222
+# Prompt for the new SSH port
+read -p "Enter the new SSH port: " NEW_SSH_PORT
+
+# Check if the port number is valid (between 1024 and 65535)
+if [[ $NEW_SSH_PORT -lt 1024 || $NEW_SSH_PORT -gt 65535 ]]; then
+  echo "Invalid port number. Please enter a port number between 1024 and 65535."
+  exit 1
+fi
 
 # Update the SSH configuration file with the new port
 echo "Updating SSH port in configuration file..."
